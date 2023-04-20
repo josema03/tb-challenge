@@ -28,6 +28,8 @@ $ docker compose up
 
 This should start the app locally and you should be able to see it by visiting `http://localhost:3000` in your browser
 
+The express server should start running on port 8080
+
 ## How to start the app without Docker
 
 Before following any other steps inside the subfolders, you have to install all the dependencies. This can be done by running `npm install` or `yarn` at the project root folder or at each of the subfolders.
@@ -117,3 +119,43 @@ $ npm run test
 ```
 
 3. Tests should start running
+
+## Endpoints tb-express-server
+
+### GET /files/data
+
+#### Accepts:
+
+-   Query params:
+
+```
+    fileName="Name of the file to search"
+```
+
+#### Returns:
+
+```
+[
+    {
+        "file": "file1.csv",
+        "lines": [
+            {
+                "text" :"RgTya",
+                "number": 64075909,
+                "hex": "70ad29aacf0b690b0467fe2b2767f765"
+            },
+                . . .
+        ]
+    }
+]
+```
+
+### GET /files/list
+
+#### Returns:
+
+```
+{
+    "files": ["file1.csv",....]
+}
+```
