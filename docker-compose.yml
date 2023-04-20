@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+    tb-express-server:
+        build: ./tb-express-server
+        ports:
+            - '8080:8080'
+    tb-react-app:
+        build: ./tb-react-app
+        ports:
+            - '3000:3000'

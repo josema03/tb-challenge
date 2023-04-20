@@ -1,7 +1,12 @@
 {
-  "name": "tb-challenge",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Jose Marin <jose.marin1997@gmail.com>",
-  "license": "MIT"
+    "name": "tb-challenge",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Jose Marin <jose.marin1997@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "tb-express-server",
+        "tb-react-app"
+    ]
 }
