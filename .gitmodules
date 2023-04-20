@@ -1,0 +1,6 @@
+[submodule "tb-react-app"]
+	path = tb-react-app
+	url = https://github.com/josema03/tb-react-app
+[submodule "tb-express-server"]
+	path = tb-express-server
+	url = https://github.com/josema03/tb-express-server
